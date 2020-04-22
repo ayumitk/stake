@@ -14,7 +14,7 @@ const html = () =>
   src(["src/ejs/**/*.ejs", "!" + "src/ejs/**/_*.ejs"])
     .pipe(ejs({}, {}, { ext: ".html" }))
     .pipe(rename({ extname: ".html" }))
-    .pipe(dest("./dist"));
+    .pipe(dest("./docs"));
 
 const css = () =>
   src("src/scss/**/*.scss")
@@ -24,12 +24,12 @@ const css = () =>
       }).on("error", sass.logError)
     )
     .pipe(autoprefixer({ grid: true }))
-    .pipe(dest("./dist/css"))
+    .pipe(dest("./docs/css"))
     .pipe(browserSync.stream());
 
 const image = () =>
   src("src/images/**/*.+(jpg|jpeg|png|gif)")
-    .pipe(changed("./dist/images"))
+    .pipe(changed("./docs/images"))
     .pipe(
       imagemin([
         imageminPng(),
@@ -41,18 +41,18 @@ const image = () =>
         }),
       ])
     )
-    .pipe(dest("./dist/images"));
+    .pipe(dest("./docs/images"));
 
 const watchFiles = () =>
   browserSync.init({
     server: {
-      baseDir: "./dist",
+      baseDir: "./docs",
     },
   });
 watch("./src/scss/**/*.scss", css);
 watch("./src/ejs/**/*.ejs", html);
 watch("./src/images/**/*", image);
-watch("./dist/**/*").on("change", browserSync.reload);
+watch("./docs/**/*").on("change", browserSync.reload);
 
 exports.html = html;
 exports.css = css;
