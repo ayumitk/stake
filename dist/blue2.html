@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+
+<!-- Material icons -->
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+
+<!-- Common CSS -->
+<link rel="stylesheet" href="/css/style.css" />
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<title>blue - Stake Technologies, Inc.</title>
+<meta name="description" content="description" />
+
+  </head>
+
+  <body class="blue blue2">
+    <header id="header-navbar">
+  <nav class="d-flex align-items-center container">
+    <a class="header-logo" href="/">LOGO</a>
+    <div class="ml-auto d-flex">
+      <div class="header-nav d-flex">
+        <a href="#">Service</a>
+        <a href="#">Media</a>
+        <a href="#">Company</a>
+        <a href="#">Career</a>
+        <a href="#">Contact</a>
+        <a href="#" class="language"><i class="material-icons">language</i><span>日本語</span></a>
+      </div>
+  </nav>
+</header>
+
+<div id="hero">
+  <div class="hero-video">
+    <video autoplay muted loop>
+      <source src="./images/AdobeStock_337667387_Video_HD_Preview.mov" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-content d-flex align-items-center">
+    <div class="container">
+      <div class="hero-content-inner">
+        <h1 class="my-3">Web3.0 Big Title</h1>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        <div class="d-flex hero-buttons">
+          <a href="#" class="btn btn-outline-primary btn-lg">Service</a>
+          <a href="#" class="btn btn-outline-primary btn-lg">Who We Are</a>
+          <a href="#" class="btn btn-primary btn-lg">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="who-we-are" class="text-center">
+  <h2>Who We Are</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+</div>
+
+<script>
+  var navPos = jQuery('#header-navbar').offset().top;
+  var navHeight = jQuery('#header-navbar').outerHeight();
+  jQuery(window).on('scroll', function () {
+    if (jQuery(this).scrollTop() > navPos) {
+      jQuery('#header-navbar').addClass('fixed');
+    } else {
+      jQuery('#header-navbar').removeClass('fixed');
+    }
+  });
+</script>  </body>
+</html>

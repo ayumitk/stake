@@ -10788,6 +10788,22 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @font-face {
+  font-family: "TTCommons";
+  src: url("/fonts/TTCommons-Bold.woff2") format("woff2"), url("/fonts/TTCommons-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TTCommons";
+  src: url("/fonts/TTCommons-ExtraBold.woff2") format("woff2"), url("/fonts/TTCommons-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "nsjp";
   font-style: normal;
   font-weight: 400;
@@ -10819,7 +10835,7 @@ h5 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .btn,
@@ -10912,7 +10928,7 @@ h1 {
 #who-we-are h2 {
   padding-top: 8rem;
   color: #1a1a1a;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 #who-we-are p {
@@ -11074,4 +11090,29 @@ body.white #who-we-are {
 
 body.index {
   font-size: 1rem;
+  font-family: "nsjp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body.black2,
+body.blue2,
+body.white2 {
+  font-weight: 500;
+}
+
+body.black2 h1,
+body.blue2 h1,
+body.white2 h1 {
+  font-weight: 700;
+}
+
+body.black2 h2,
+body.blue2 h2,
+body.white2 h2 {
+  font-weight: 800;
+}
+
+body.black2 #hero .hero-buttons a,
+body.blue2 #hero .hero-buttons a,
+body.white2 #hero .hero-buttons a {
+  font-weight: 600;
 }
