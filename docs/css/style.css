@@ -10835,7 +10835,7 @@ h5 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 .btn,
@@ -10918,7 +10918,11 @@ h1 {
 
 #hero .hero-buttons a {
   display: block;
-  margin: 0 0.5rem;
+  margin-right: 1rem;
+}
+
+#hero .hero-title {
+  font-family: "nsjp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #who-we-are {
@@ -10952,19 +10956,6 @@ body.blue #header-navbar a {
   color: #fff;
 }
 
-body.black #hero .hero-buttons,
-body.blue #hero .hero-buttons {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body.black #hero .hero-content .hero-content-inner,
-body.blue #hero .hero-content .hero-content-inner {
-  text-align: center;
-  margin: auto;
-}
-
 body.black #hero .hero-content .hero-content-inner h1,
 body.blue #hero .hero-content .hero-content-inner h1 {
   color: #fff;
@@ -10978,6 +10969,8 @@ body.blue #hero .hero-content .hero-content-inner p {
 body.black #hero .hero-video video {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
 }
 
 body.black #hero .hero-video::after {

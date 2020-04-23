@@ -118,7 +118,7 @@ h5 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 .btn,
@@ -194,8 +194,14 @@ $red: #ed2c3f;
   .hero-buttons {
     a {
       display: block;
-      margin: 0 0.5rem;
+      margin-right: 1rem;
     }
+  }
+  .hero-title {
+    // font-size: 1rem;
+    font-family: "nsjp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 }
 
@@ -225,19 +231,13 @@ body.blue {
     }
   }
   #hero {
-    .hero-buttons {
-      justify-content: center;
-    }
     .hero-content {
       .hero-content-inner {
-        text-align: center;
-        margin: auto;
         h1 {
           color: $white;
         }
         p {
           color: #b2b2b2;
-          // color: $white;
         }
       }
     }
@@ -249,6 +249,7 @@ body.black {
     .hero-video {
       video {
         filter: grayscale(100%);
+        transform: scale(-1, 1);
       }
       &::after {
         background: rgba(0, 0, 0, 0.4);
