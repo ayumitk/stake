@@ -11088,6 +11088,79 @@ body.sidebar #media img {
   padding-left: 70px;
 }
 
+body.sidebar-rectangle #header-navbar {
+  border-right: solid 1px rgba(255, 255, 255, 0.1);
+  background: #000;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body.sidebar-rectangle #header-navbar a {
+  color: #fff;
+  display: block;
+}
+
+body.sidebar-rectangle #header-navbar nav {
+  width: 140px;
+  padding: 0 23px;
+}
+
+body.sidebar-rectangle #header-navbar nav .header-nav {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  top: 170px;
+  position: absolute;
+}
+
+body.sidebar-rectangle #header-navbar nav .header-nav a {
+  padding: 0.5rem 0;
+  font-size: 1.125rem;
+}
+
+body.sidebar-rectangle #header-navbar .header-logo {
+  background: #fff;
+  padding: 1rem 1.5rem 1rem 1rem;
+  position: absolute;
+  top: 23px;
+  -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body.sidebar-rectangle #header-navbar .header-logo img {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 280px;
+}
+
+body.sidebar-rectangle #header-navbar .language {
+  position: absolute;
+  bottom: 2rem;
+}
+
+body.sidebar-rectangle #header-navbar.fixed .header-logo {
+  -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+body.sidebar-rectangle #header-navbar.fixed .header-logo img {
+  width: 180px;
+}
+
+body.sidebar-rectangle #header-navbar.fixed nav .header-nav {
+  top: 140px;
+}
+
+body.sidebar-rectangle #hero .hero-content .hero-content-inner,
+body.sidebar-rectangle #who-we-are img,
+body.sidebar-rectangle #service img,
+body.sidebar-rectangle #media img {
+  padding-left: 70px;
+}
+
 @-webkit-keyframes slideIn {
   from {
     opacity: 0;

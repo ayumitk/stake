@@ -361,6 +361,67 @@ body.sidebar {
   }
 }
 
+body.sidebar-rectangle {
+  #header-navbar {
+    border-right: solid 1px rgba(255, 255, 255, 0.1);
+    background: #000;
+    height: 100vh;
+    display: flex;
+    a {
+      color: $white;
+      display: block;
+    }
+    nav {
+      width: 140px;
+      padding: 0 23px;
+      .header-nav {
+        transition: all 0.2s ease;
+        top: 170px;
+        position: absolute;
+        a {
+          padding: 0.5rem 0;
+          font-size: 1.125rem;
+        }
+      }
+    }
+    .header-logo {
+      background: $white;
+      padding: 1rem 1.5rem 1rem 1rem;
+      position: absolute;
+      top: 23px;
+      box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
+      transition: all 0.2s ease;
+      img {
+        transition: all 0.2s ease;
+        width: 280px;
+      }
+    }
+    .language {
+      position: absolute;
+      bottom: 2rem;
+    }
+    &.fixed {
+      .header-logo {
+        box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
+        img {
+          width: 180px;
+        }
+      }
+      nav {
+        .header-nav {
+          top: 140px;
+        }
+      }
+    }
+  }
+  #hero .hero-content .hero-content-inner,
+  #who-we-are img,
+  #service img,
+  #media img {
+    padding-left: 70px;
+  }
+}
+
 @keyframes slideIn {
   from {
     opacity: 0;

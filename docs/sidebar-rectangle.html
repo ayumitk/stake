@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+
+<!-- Material icons -->
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+
+<!-- Common CSS -->
+<link rel="stylesheet" href="./css/style.css" />
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<title>B-1 - Stake Technologies, Inc.</title>
+<meta name="description" content="デザイン確認用" />
+
+  </head>
+
+  <body class="sidebar-rectangle">
+    <div id="wrapper">
+      <div class="bg-video">
+        <video autoplay muted loop>
+          <source src="./images/video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <header id="header-navbar">
+        <nav class="d-flex flex-column">
+          <a class="header-logo" href="/"
+            ><img
+              src="./images/logo-header@2x.png"
+              alt="Stake Technologies, Inc."
+          /></a>
+          <div class="header-nav">
+            <a href="#">Service</a>
+            <a href="#">Media</a>
+            <a href="#">Company</a>
+            <a href="#">Career</a>
+            <a href="#">Contact</a>
+          </div>
+          <a href="#" class="language"
+            ><i class="material-icons">language</i><span>日本語</span></a
+          >
+        </nav>
+      </header>
+
+      <div id="hero">
+        <div class="hero-content d-flex align-items-center">
+          <div class="container">
+            <div class="hero-content-inner">
+              <h1 class="mb-3 hero-title">Web3.0を実現する</h1>
+              <p class="mb-5 hero-text">
+                Stake
+                Technologiesはブロックチェーンなどの最先端技術を用い次世代の分散型WebであるWeb3.0、そしてその先に社会の再分散化を目指すテクノロジー企業です。
+              </p>
+              <div class="d-flex hero-buttons">
+                <a href="#" class="btn btn-outline-primary btn-lg">Service</a>
+                <a href="#" class="btn btn-outline-primary btn-lg"
+                  >Who We Are</a
+                >
+                <a href="#" class="btn btn-primary btn-lg">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="who-we-are" class="text-center">
+        <img src="./images/who-we-are@2x.png" alt="" />
+      </div>
+
+      <div id="service">
+        <img src="./images/service@2x.png" alt="" />
+      </div>
+
+      <div id="media">
+        <img src="./images/media@2x.png" alt="" />
+      </div>
+    </div>
+
+    <script>
+      $(function () {
+        var navPos = jQuery("#header-navbar").offset().top;
+        var navHeight = $(window).height();
+        jQuery(window).on("scroll", function () {
+          if (jQuery(this).scrollTop() > navHeight) {
+            jQuery("#header-navbar").addClass("fixed");
+          } else {
+            jQuery("#header-navbar").removeClass("fixed");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
