@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%- include('./common/_head', {title: "C-2"}); %>
+</head>
+
+<body class="rectangle square">
+  <div id="wrapper">
+
+    <div class="bg-video">
+      <video autoplay muted loop>
+        <source src="./images/video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div id="hero">
+      <div class="hero-content d-flex align-items-center">
+        <header id="header-navbar">
+          <nav class="d-flex align-items-center container">
+            <a class="header-logo" href="/"><img src="./images/logo-square@2x.png" alt="Stake Technologies, Inc."></a>
+            <div class="ml-auto d-flex">
+              <div class="header-nav d-flex">
+                <a href="#">Service</a>
+                <a href="#">Media</a>
+                <a href="#">Company</a>
+                <a href="#">Career</a>
+                <a href="#">Contact</a>
+                <a href="#" class="language"><i class="material-icons">language</i><span>日本語</span></a>
+              </div>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-content-inner">
+            <h1 class="mb-3 hero-title">Web3.0を実現する</h1>
+            <p class="mb-5 hero-text">Stake
+              Technologiesはブロックチェーンなどの最先端技術を用い次世代の分散型WebであるWeb3.0、そしてその先に社会の再分散化を目指すテクノロジー企業です。</p>
+            <div class="d-flex hero-buttons">
+              <a href="#" class="btn btn-outline-primary btn-lg">Service</a>
+              <a href="#" class="btn btn-outline-primary btn-lg">Who We Are</a>
+              <a href="#" class="btn btn-primary btn-lg">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header id="header-navbar-scrolled" class="d-flex align-items-center">
+      <nav class="d-flex align-items-center container">
+        <a class="header-logo" href="/"><img src="./images/logo-header@2x.png" alt="Stake Technologies, Inc."></a>
+        <div class="ml-auto d-flex">
+          <div class="header-nav d-flex">
+            <a href="#">Service</a>
+            <a href="#">Media</a>
+            <a href="#">Company</a>
+            <a href="#">Career</a>
+            <a href="#">Contact</a>
+            <a href="#" class="language"><i class="material-icons">language</i><span>日本語</span></a>
+          </div>
+      </nav>
+    </header>
+
+    <div id="who-we-are" class="text-center">
+      <img src="./images/who-we-are@2x.png" alt="" />
+    </div>
+
+    <div id="service">
+      <img src="./images/service@2x.png" alt="" />
+    </div>
+
+    <div id="media">
+      <img src="./images/media@2x.png" alt="" />
+    </div>
+  </div>
+
+  <script>
+    $(function () {
+      var navPos = jQuery('#header-navbar').offset().top;
+      // var navHeight = jQuery('#hero').outerHeight();
+      var navHeight = $(window).height();
+      jQuery(window).on('scroll', function () {
+        if (jQuery(this).scrollTop() > navHeight) {
+          jQuery('#header-navbar-scrolled').addClass('fixed');
+        } else {
+          jQuery('#header-navbar-scrolled').removeClass('fixed');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
