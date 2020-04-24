@@ -20,68 +20,76 @@
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-<title>black - Stake Technologies, Inc.</title>
-<meta name="description" content="description" />
+<title>Black - Stake Technologies, Inc.</title>
+<meta name="description" content="デザイン確認用" />
 
   </head>
 
-  <body class="black black2">
-    <header id="header-navbar">
-  <nav class="d-flex align-items-center container">
-    <a class="header-logo" href="/">LOGO</a>
-    <div class="ml-auto d-flex">
-      <div class="header-nav d-flex">
-        <a href="#">Service</a>
-        <a href="#">Media</a>
-        <a href="#">Company</a>
-        <a href="#">Career</a>
-        <a href="#">Contact</a>
-        <a href="#" class="language"><i class="material-icons">language</i><span>日本語</span></a>
-      </div>
-  </nav>
-</header>
+  <body class="black bg2">
+    <div id="wrapper">
 
-<div id="hero">
-  <div class="hero-video">
+  <div class="bg-video">
     <video autoplay muted loop>
       <source src="./images/video.mp4" type="video/mp4">
     </video>
   </div>
-  <div class="hero-content d-flex align-items-center">
-    <div class="container">
-      <div class="hero-content-inner">
-        <h1 class="my-3 hero-title">Web3.0を実現する</h1>
-        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et
-          dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-        <div class="d-flex hero-buttons">
-          <a href="#" class="btn btn-outline-primary btn-lg">Service</a>
-          <a href="#" class="btn btn-outline-primary btn-lg">Who We Are</a>
-          <a href="#" class="btn btn-primary btn-lg">Contact</a>
+
+  <header id="header-navbar">
+    <nav class="d-flex align-items-center container">
+      <a class="header-logo" href="/">LOGO</a>
+      <div class="ml-auto d-flex">
+        <div class="header-nav d-flex">
+          <a href="#">Service</a>
+          <a href="#">Media</a>
+          <a href="#">Company</a>
+          <a href="#">Career</a>
+          <a href="#">Contact</a>
+          <a href="#" class="language"><i class="material-icons">language</i><span>日本語</span></a>
+        </div>
+    </nav>
+  </header>
+
+  <div id="hero">
+    <div class="hero-content d-flex align-items-center">
+      <div class="container">
+        <div class="hero-content-inner">
+          <h1 class="my-3 hero-title">Web3.0を実現する</h1>
+          <p class="mb-5 hero-text">Stake Technologiesはブロックチェーンなどの最先端技術を用い次世代の分散型WebであるWeb3.0、そしてその先に社会の再分散化を目指すテクノロジー企業です。</p>
+          <div class="d-flex hero-buttons">
+            <a href="#" class="btn btn-outline-primary btn-lg">Service</a>
+            <a href="#" class="btn btn-outline-primary btn-lg">Who We Are</a>
+            <a href="#" class="btn btn-primary btn-lg">Contact</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div id="who-we-are" class="text-center">
-  <h2>Who We Are</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+  <div id="who-we-are" class="text-center">
+    <img src="./images/who-we-are@2x.png" alt=""/>
+  </div>
+
+  <div id="service">
+    <img src="./images/service@2x.png" alt=""/>
+  </div>
+
+  <div id="media">
+    <img src="./images/media@2x.png" alt=""/>
+  </div>
 </div>
 
 <script>
-  var navPos = jQuery('#header-navbar').offset().top;
-  var navHeight = jQuery('#header-navbar').outerHeight();
-  jQuery(window).on('scroll', function () {
-    if (jQuery(this).scrollTop() > navPos) {
-      jQuery('#header-navbar').addClass('fixed');
-    } else {
-      jQuery('#header-navbar').removeClass('fixed');
-    }
+  $(function () {
+    var navPos = jQuery('#header-navbar').offset().top;
+    var navHeight = jQuery('#header-navbar').outerHeight();
+    jQuery(window).on('scroll', function () {
+      if (jQuery(this).scrollTop() > navPos) {
+        jQuery('#header-navbar').addClass('fixed');
+      } else {
+        jQuery('#header-navbar').removeClass('fixed');
+      }
+    });
   });
-</script>  </body>
+</script>
+  </body>
 </html>
