@@ -11110,7 +11110,7 @@ body.sidebar-rectangle #header-navbar nav {
 body.sidebar-rectangle #header-navbar nav .header-nav {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  top: 170px;
+  top: 150px;
   position: absolute;
 }
 
@@ -11123,9 +11123,10 @@ body.sidebar-rectangle #header-navbar .header-logo {
   background: #fff;
   padding: 1rem 1.5rem 1rem 1rem;
   position: absolute;
-  top: 23px;
-  -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -11142,16 +11143,15 @@ body.sidebar-rectangle #header-navbar .language {
 }
 
 body.sidebar-rectangle #header-navbar.fixed .header-logo {
-  -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
+  padding: 0.75rem 1.25rem 0.75rem 0.75rem;
 }
 
 body.sidebar-rectangle #header-navbar.fixed .header-logo img {
-  width: 180px;
+  width: 200px;
 }
 
 body.sidebar-rectangle #header-navbar.fixed nav .header-nav {
-  top: 140px;
+  top: 120px;
 }
 
 body.sidebar-rectangle #hero .hero-content .hero-content-inner,
