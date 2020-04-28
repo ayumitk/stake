@@ -144,7 +144,7 @@ $red: #ed2c3f;
   z-index: 4;
   .header-nav {
     a {
-      padding: 0 1rem;
+      padding: 1.5rem 1rem;
     }
   }
   .language {
@@ -246,13 +246,6 @@ $red: #ed2c3f;
   }
 }
 
-body.index {
-  font-size: 1rem;
-  font-family: "nsjp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 #who-we-are,
 #service,
 #media {
@@ -276,158 +269,10 @@ body.index {
   background-size: 1440px;
 }
 
-body.header,
-body.header-slim {
-  #header-navbar {
-    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.97);
-    width: 100%;
-    a {
-      color: $black;
-      display: block;
-    }
-    .header-logo {
-      transition: all 0.2s;
-      padding: 0.75rem 0;
-      img {
-        transition: all 0.2s;
-        width: 236px;
-      }
-    }
-    &.fixed {
-      .header-logo {
-        padding: 0.5rem 0;
-        img {
-          width: 180px;
-        }
-      }
-    }
-  }
-}
-
-body.header-slim {
-  #header-navbar {
-    .header-logo {
-      img {
-        width: 266px;
-      }
-    }
-    &.fixed {
-      .header-logo {
-        img {
-          width: 200px;
-        }
-      }
-    }
-  }
-}
-
-body.sidebar {
-  #header-navbar {
-    border-right: solid 1px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 1);
-    height: 100vh;
-    display: flex;
-    a {
-      color: $black;
-      display: block;
-    }
-    nav {
-      width: 140px;
-      padding: 0 23px;
-      .header-nav {
-        a {
-          padding: 0.5rem 0;
-          font-size: 1.125rem;
-        }
-      }
-    }
-    .header-logo {
-      padding: 1.5rem 0;
-      img {
-        width: 94px;
-      }
-    }
-    .language {
-      position: absolute;
-      bottom: 2rem;
-    }
-  }
-  #hero .hero-content .hero-content-inner,
-  #who-we-are img,
-  #service img,
-  #media img {
-    padding-left: 70px;
-  }
-}
-
-body.sidebar-rectangle {
-  #header-navbar {
-    border-right: solid 1px rgba(255, 255, 255, 0.1);
-    background: #000;
-    height: 100vh;
-    display: flex;
-    a {
-      color: $white;
-      display: block;
-    }
-    nav {
-      width: 140px;
-      padding: 0 23px;
-      .header-nav {
-        transition: all 0.2s ease;
-        top: 150px;
-        position: absolute;
-        a {
-          padding: 0.5rem 0;
-          font-size: 1.125rem;
-        }
-      }
-    }
-    .header-logo {
-      background: $white;
-      padding: 1rem 1.5rem 1rem 1rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1);
-      transition: all 0.2s ease;
-      img {
-        transition: all 0.2s ease;
-        width: 280px;
-      }
-    }
-    .language {
-      position: absolute;
-      bottom: 2rem;
-    }
-    &.fixed {
-      .header-logo {
-        padding: 0.75rem 1.25rem 0.75rem 0.75rem;
-        // box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
-        img {
-          width: 200px;
-        }
-      }
-      nav {
-        .header-nav {
-          top: 120px;
-        }
-      }
-    }
-  }
-  #hero .hero-content .hero-content-inner,
-  #who-we-are img,
-  #service img,
-  #media img {
-    padding-left: 70px;
-  }
-}
-
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateY(-70px);
+    transform: translateY(-60px);
   }
   to {
     opacity: 1;
@@ -448,21 +293,14 @@ body.rectangle {
       color: $white;
       display: block;
     }
-    .header-logo {
-      background: $white;
-      padding: 1.5rem 1.5rem 1.5rem 1.25rem;
-      img {
-        width: 250px;
-      }
-    }
   }
   #header-navbar-scrolled {
     background: $white;
     z-index: 9999;
     position: fixed;
-    height: 70px;
+    height: 60px;
     width: 100%;
-    top: -70px;
+    top: -60px;
     border-bottom: solid 1px rgba(0, 0, 0, 0.1);
     animation: top 0.2s ease-in;
     &.fixed {
@@ -477,7 +315,7 @@ body.rectangle {
     }
     .header-logo {
       img {
-        width: 180px;
+        width: 220px;
       }
     }
     .header-nav {
@@ -491,17 +329,6 @@ body.rectangle {
         font-size: 1.125rem;
         margin-top: 5px;
         vertical-align: sub;
-      }
-    }
-  }
-}
-
-body.square {
-  #header-navbar {
-    .header-logo {
-      padding: 1rem 1.5rem;
-      img {
-        width: 110px;
       }
     }
   }
